@@ -28,7 +28,12 @@ export function SearchInput(): JSX.Element {
         value={searchQuery}
         onFocus={() => setIsErrored(false)}
       />
-      <Button isLoading={isFetching} type="button" onClick={handleClick}>
+      <Button
+        disabled={isFetching}
+        isLoading={isFetching}
+        type="button"
+        onClick={handleClick}
+      >
         {isFetching ? (
           <AiOutlineLoading className="loading" size={24} color="#ffffff" />
         ) : (
