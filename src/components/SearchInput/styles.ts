@@ -29,6 +29,7 @@ export const Container = styled.div<IContainerProps>`
   input {
     height: calc(100% - 2px);
     width: 100%;
+    background: transparent;
 
     padding: 0 1.5rem;
     font-size: 1.2rem;

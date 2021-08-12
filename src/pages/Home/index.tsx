@@ -22,10 +22,8 @@ export function Home(): JSX.Element {
             >
               <Skeleton count={10} height={24} />
             </SkeletonTheme>
-          ) : repos.length > 0 ? (
-            repos.map(repo => <RepositoryItem key={repo.id} repo={repo} />)
           ) : (
-            <h1>Nenhum repositório encontrado</h1>
+            repos.map(repo => <RepositoryItem key={repo.id} repo={repo} />)
           )}
         </ul>
       </Content>

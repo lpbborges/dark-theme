@@ -19,6 +19,6 @@ export const themes: IThemes = {
     body: '#000',
     text: '#c2c2c2',
     border: '#e7e6e68a',
-    placeholder: '#dfdfdf',
+    placeholder: '#dfdfdf50',
   },
 };
